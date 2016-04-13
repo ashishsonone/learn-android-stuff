@@ -5,13 +5,11 @@ import android.graphics.ColorFilter;
 import android.graphics.LightingColorFilter;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.diogoduailibe.lzstring4j.LZString;
 import com.example.ashish.canvastutorial.R;
-import com.example.ashish.canvastutorial.utility.Compressor;
+import com.example.ashish.canvastutorial.utility.Base64ConvertorUtility;
 
 import java.util.ArrayList;
 
@@ -37,7 +35,7 @@ public class SignatureActivity extends AppCompatActivity implements View.OnClick
 
         showColorSelection(customCanvas.getColor());
 
-        Compressor.test();
+        Base64ConvertorUtility.test();
     }
 
     public void setUpButton(int resId, int color){
