@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:custom="http://schemas.android.com/apk/res-auto"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#FFFFFF"
+android:orientation="vertical" >
+
+<com.example.ashish.canvastutorial.signature.CanvasView
+    android:id="@+id/signature_canvas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="#FFFFFF" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+    <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/color_button"
+            android:id="@+id/red"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/color_button"
+            android:id="@+id/blue"
+            />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clearCanvas"
+            android:text="Clear Canvas" />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/color_button"
+            android:id="@+id/black"
+        />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/color_button"
+            android:id="@+id/green"
+            />
+    </LinearLayout>
+</FrameLayout>
